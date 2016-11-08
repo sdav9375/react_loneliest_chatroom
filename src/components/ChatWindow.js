@@ -3,7 +3,10 @@ import React from 'react';
 class ChatWindow extends React.Component {
   render() {
     return(
-      <p>ChatWindow</p>
+      <section className="chat">
+        <ol id="conversation">
+        </ol>
+      </section>
     )
   }
 }

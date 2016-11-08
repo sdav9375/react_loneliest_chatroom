@@ -9,11 +9,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-        <Header />
-          <h2>Loneliest Chatroom</h2>
-          <h2>No friends? No problem!</h2>
+          <Header />
         </div>
-
         <ChatWindow />
         <MessageBox />
       </div>
