@@ -1,9 +1,14 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css);
 @import url(http://fonts.googleapis.com/css?family=Sigmar+One|Courgette|Monda);
+
+@font-face {
+  font-family: 'some';
+  src: url('Some_Time_Later.otf');
+}
 body {
-  background-color: #AA3939;
+  background-color: #0a2230;
   color: #FFAAAA;
-  font-family: 'Monda';
+  font-family: 'some';
   font-size: 11px;
 }
 header {
@@ -12,39 +17,44 @@ header {
 
 }
 h1, h2 {
-  font-family: 'Sigmar One', cursive;
-  text-shadow: 0 1px 0 #550000,
-               0 2px 0 #550000,
-               0 3px 0 #550000,
-               0 4px 0 #550000,
-               0 5px 0 #550000,
+  font-family: 'some', cursive;
+  /*text-shadow: 0 1px 0 #fff,
+               0 2px 0 #fff,
+               0 3px 0 #fff,
+               0 4px 0 #fff,
+               0 5px 0 #fff,
                0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),
                0 1px 3px rgba(0,0,0,.3),
                0 3px 5px rgba(0,0,0,.2),
                0 5px 10px rgba(0,0,0,.25),
-               0 5px 5px rgba(0,0,0,.2);
+               0 5px 5px rgba(0,0,0,.2);*/
   text-align: center;
+  letter-spacing:2px;
   font-size: 36px;
   line-height: 36px;
+  margin: 5px;
 }
 
 h2 {
-  font-size: 24px;
-  text-shadow: 0 1px 0 #550000,
+  font-size: 3.5em;
+  text-shadow: 1px 1px 0 #878585,
+               2px 2px 3px #222;
+  /*text-shadow: 0 1px 0 #550000,
                0 2px 0 #550000,
                0 3px 0 #550000,
                0 4px 0 #550000,
-               0 5px 0 #550000;
+               0 5px 0 #550000;*/
 }
+
 main {
   width: 80%;
   max-width: 500px;
   margin: 10px auto;
 }
 .chat, #new-message-body {
-  background-color: #FFAAAA;
-  border-radius: 25px;
+  background-color: #F6F7D7;
+  border-radius: 8px;
   box-shadow: inset 0 0 5px #000000;
   overflow: scroll;
 }
@@ -91,7 +101,7 @@ main {
   width: 25px;
   text-indent: -999999px;
 }
-.message span.timestamp {
+.message .timestamp {
   display: block;
   position: absolute;
   left: -5px;
@@ -122,10 +132,13 @@ main {
   color: #550000;
 }
 input[type="button"] {
-  background-image: linear-gradient(0deg, #005959 0%, #006868 100%);
+  background-image: linear-gradient(0deg, #D61C59 0%, #D61C59 100%);
   border-radius: 10px;
+  border: 1px solid #222;
   height: 40px;
-  border: none;
+  width: 25%;
+  margin: 7px;
   color: #A3F5F5;
   font-size: 16px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
